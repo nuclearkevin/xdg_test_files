@@ -261,3 +261,18 @@ No geometry metadata is added to this mesh. It is used purely to test element-to
 <div align="center">
   <img src="images/regularized_hex_mesh.png" alt="Regularized hexehedral mesh" width="463">
 </div>
+
+## two_region_hex.exo/h5m
+
+This is a hex mesh of a two-region geometry. Region one extends from (-0.5, -0.5, -0.5) to (0.5, 0.5, 0.0),
+and region two extends from (-0.5, -0.5, 0.0) to (0.5, 0.5, 0.5) in model units. There is a single hex
+element per region. No geometry metadata has been added to this mesh as it exists purely to test
+volume exclusion.
+
+| Element Type  | Count |
+|---------------|-------|
+| Hexahedron    | 2     |
+
+<div align="center">
+  <img src="images/two_region_hex.png" alt="Two region hexehedral mesh" width="463">
+</div>
