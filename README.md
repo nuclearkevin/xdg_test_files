@@ -264,15 +264,19 @@ No geometry metadata is added to this mesh. It is used purely to test element-to
 
 ## two_region_hex.exo/h5m
 
-This is a hex mesh of a two-region geometry. Region one extends from (-0.5, -0.5, -0.5) to (0.5, 0.5, 0.0),
-and region two extends from (-0.5, -0.5, 0.0) to (0.5, 0.5, 0.5) in model units. There is a single hex
-element per region. No geometry metadata has been added to this mesh as it exists purely to test
-volume exclusion.
+This is a hex mesh of a four-region geometry segmented into two volumes. Region one extends from
+(-0.5, -0.5, -0.25) to (0.5, 0.5, 0.25), region two extends from (-0.5, -0.5, 0.25) to (0.5, 0.5, 0.75),
+region three extends from (-0.5, -0.5, 0.75) to (0.5, 0.5, 1.25), and region four extends from
+(-0.5, -0.5, 1.25) to (0.5, 0.5, 1.75). Regions one and three are bundled into a single volume (with
+an ID of 2), and regions two and four are bundled into a single volume (with an ID of 1). Each
+region contains 64 hexahedral elements.
+
+No geometry metadata is added to this mesh. It is used purely to test mesh manager volume inclusion/exclusion.
 
 | Element Type  | Count |
 |---------------|-------|
-| Hexahedron    | 2     |
+| Hexahedron    | 256   |
 
 <div align="center">
-  <img src="images/two_region_hex.png" alt="Two region hexehedral mesh" width="463">
+  <img src="images/four_region_hex.png" alt="Four region hexehedral mesh" width="463">
 </div>
