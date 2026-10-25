@@ -262,7 +262,7 @@ No geometry metadata is added to this mesh. It is used purely to test element-to
   <img src="images/regularized_hex_mesh.png" alt="Regularized hexehedral mesh" width="463">
 </div>
 
-## two_region_hex.exo/h5m
+## four_region_hex.exo/h5m
 
 This is a hex mesh of a four-region geometry segmented into two volumes. Region one extends from
 (-0.5, -0.5, -0.25) to (0.5, 0.5, 0.25), region two extends from (-0.5, -0.5, 0.25) to (0.5, 0.5, 0.75),
@@ -279,4 +279,20 @@ No geometry metadata is added to this mesh. It is used purely to test mesh manag
 
 <div align="center">
   <img src="images/four_region_hex.png" alt="Four region hexehedral mesh" width="463">
+</div>
+
+
+## amr_mesh.exo
+
+This is a hex mesh of a two region geometry with elements generated from an adaptive mesh refinement sequence.
+
+No geometry metadata is added to this mesh. It is used purely to test element to element ray traversal and find
+element calls when an AMR mesh is provided to a libMesh mesh manager.
+
+| Element Type  | Count |
+|---------------|-------|
+| Hexahedron    | 1096  |
+
+<div align="center">
+  <img src="images/amr_mesh.png" alt="Two region AMR mesh" width="463">
 </div>
