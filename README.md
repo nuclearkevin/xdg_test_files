@@ -313,6 +313,6 @@ element calls when an AMR mesh is provided to a libMesh mesh manager.
 | Hexahedron    |       32       |       1096       |
 
 <div align="center">
-  <img src="images/amr_mesh_unrefined.png" alt="Two region HEX8 mesh prior to the application of AMR" width="231">
-  <img src="images/amr_mesh.png" alt="Two region HEX8 mesh after the application of AMR in XDG's test suite" width="231">
+  <img src="images/amr_mesh_hex_unrefined.png" alt="Two region HEX8 mesh prior to the application of AMR" width="231">
+  <img src="images/amr_mesh_hex.png" alt="Two region HEX8 mesh after the application of AMR in XDG's test suite" width="231">
 </div>
